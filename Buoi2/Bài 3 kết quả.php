@@ -12,18 +12,6 @@
         <form>
             <h2>PHÉP TÍNH TRÊN HAI SỐ</h2>
             <?php
-                function isPrime($num) {
-                    if ($num < 2) return false;
-                    for ($i = 2; $i <= sqrt($num); $i++) {
-                        if ($num % $i == 0) return false;
-                    }
-                    return true;
-                }
-
-                function checkEvenOdd($num) {
-                    return ($num % 2 == 0) ? "chẵn" : "lẻ";
-                }
-
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $so1 = $_POST['so1'];
                     $so2 = $_POST['so2'];
